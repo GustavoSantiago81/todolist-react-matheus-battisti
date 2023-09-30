@@ -7,6 +7,10 @@ npm create vite@latest
 Move to the Trash files like "assets"
 and clear "index.css" and "app.css"
 
+
+## 2 Passo (Use State)
+para renderizar em tempo real
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

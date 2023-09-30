@@ -1,1 +1,16 @@
+body {
+  background-color: #f4f4f4;
+  padding: 30px;
+  color:#222;
+  background-image: url("https://th.bing.com/th/id/OIP.eFBjSJFHmU-P7peQ9ZCNTQHaEa?pid=ImgDet&rs=1");
+  background-position: center;
+  background-size: cover;
+}
 
+.app {
+  max-width: 600px;
+  margin: 0 auto 300px;
+  background-color: #efefef;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
