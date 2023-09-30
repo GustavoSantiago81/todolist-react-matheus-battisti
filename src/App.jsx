@@ -30,8 +30,8 @@ function App() {
 
   const [search, setSearch] = useState("");
 
-  const[filter,setFilter]=useState("All");
-  const[sort, setSort] = useState("Asc");
+  const [filter, setFilter] = useState("All");
+  const [sort, setSort] = useState("Asc");
   // pode usar uma function, ou arrow function
   const addTodo = (text, category) => {
     const newTodos = [
@@ -82,7 +82,13 @@ function App() {
         <Filter filter={filter} setFilter={setFilter} />
         <div className="todo-list">
           {todos
-            .filter((todo) => filter === "All" ? true : filter === "Completed" ? todo.isCompleted === true : !todo.isCompleted)
+            .filter((todo) =>
+              filter === "All"
+                ? true
+                : filter === "Completed"
+                ? todo.isCompleted === true
+                : !todo.isCompleted
+            )
             .filter((todo) =>
               todo.text.toLowerCase().includes(search.toLowerCase())
             )
