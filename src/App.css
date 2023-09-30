@@ -25,6 +25,7 @@ button {
   opacity: 0.8;
   transition: 0.3s;
   color: #fff;
+  margin-right: 10px;
 }
 
 h1 {
