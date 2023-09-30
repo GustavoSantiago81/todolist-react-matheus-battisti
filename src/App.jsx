@@ -50,13 +50,30 @@ function App() {
     );
     setTodos(filteredTodos); //    todos.splice();
   }
+
+  const completeTodo = (id) => {
+    //   const index = todos.findIndex((todo)=> todo === id);
+    //     if (!index){ return;}
+    //      todos[index].isCompleted=true;
+    //       setTodos([...todos]);
+    // Ou usando o filter e splice
+    const newTodos = [...todos]
+     newTodos.map ((todo) => {
+      // if (todo.id == id ){
+      //   todo.isCompleted = !todo.isCompleted
+      // }
+      todo.id === id ? todo.isCompleted = !todo.isCompleted : todo
+    }
+    );
+    setTodos(newTodos);
+  }
   return (
     <>
       <div className="app">
         <h1>Lista de Tarefas</h1>
         <div className="todo-list">
           {todos.map((todo) => (
-            <Todo key={todo.id} todo={todo} removeTodo={removeTodo} />
+            <Todo key={todo.id} todo={todo} removeTodo={removeTodo} completeTodo={completeTodo} />
           ))}
         </div>
 
