@@ -6,8 +6,8 @@ function Todo({todo}) {
       <p>{todo.text}</p>
       <p className="category">({todo.category})</p>
 
-      <button>Completar</button>
-      <button>x</button>
+      <button className="complete">Completar</button>
+      <button className="remove">x</button>
     </div>
   );
 }

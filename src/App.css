@@ -27,6 +27,14 @@ button {
   color: #fff;
 }
 
+.complete {
+  background-color: #5cb85c;
+}
+
+.remove {
+  background-color: #d9534f
+}
+
 button:hover {
   opacity: 1
 }
