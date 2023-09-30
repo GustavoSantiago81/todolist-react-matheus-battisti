@@ -14,3 +14,27 @@ body {
   padding: 20px 30px;
   border-radius: 10px;
 }
+
+
+button {
+  background-color :#333974 ;
+  border: none;
+  border-radius: 3px;
+  padding:5px 10px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 1
+}
+
+input, select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  width: 100%;
+}
